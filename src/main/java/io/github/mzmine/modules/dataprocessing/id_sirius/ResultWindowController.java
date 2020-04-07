@@ -39,6 +39,7 @@ import io.github.mzmine.datamodel.PeakListRow;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import org.controlsfx.control.PopOver;
 import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.interfaces.IAtomContainer;
 
@@ -132,25 +133,15 @@ public class ResultWindowController{
                     setText("");
                 } else {
                     setGraphic(item);
-                    Tooltip tooltip = new Tooltip();
+                    PopOver popOver = new PopOver();
 
                     this.setOnMouseEntered(e -> {
+                        popOver.setContentNode(item);
+                        popOver.show(this);
 
-                        IAtomContainer container = item.getContainer();
-                        try {
-                            if (container == null) return;
-                            Structure2DComponent newItem = new Structure2DComponent(container);
-                            newItem.resize(300, 300);
-                            tooltip.setGraphic(newItem);
-                        } catch (CDKException ex) {
-                            ex.printStackTrace();
-                        }
-
-                        tooltip.show(this, e.getScreenX() + 50, e.getScreenY());
                     });
-
                     this.setOnMouseExited(e -> {
-                        tooltip.hide();
+                        popOver.hide();
                     });
 
                 }
