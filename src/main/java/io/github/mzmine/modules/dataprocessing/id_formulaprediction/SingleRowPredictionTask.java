@@ -18,28 +18,8 @@
 
 package io.github.mzmine.modules.dataprocessing.id_formulaprediction;
 
-import javafx.application.Platform;
-import java.util.Map;
-import java.util.concurrent.FutureTask;
-import java.util.logging.Logger;
-
-import org.openscience.cdk.formula.MolecularFormulaGenerator;
-import org.openscience.cdk.formula.MolecularFormulaRange;
-import org.openscience.cdk.interfaces.IChemObjectBuilder;
-import org.openscience.cdk.interfaces.IMolecularFormula;
-import org.openscience.cdk.silent.SilentChemObjectBuilder;
-import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
-
 import com.google.common.collect.Range;
-
-import io.github.mzmine.datamodel.DataPoint;
-import io.github.mzmine.datamodel.Feature;
-import io.github.mzmine.datamodel.IonizationType;
-import io.github.mzmine.datamodel.IsotopePattern;
-import io.github.mzmine.datamodel.MassList;
-import io.github.mzmine.datamodel.PeakListRow;
-import io.github.mzmine.datamodel.RawDataFile;
-import io.github.mzmine.datamodel.Scan;
+import io.github.mzmine.datamodel.*;
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.modules.dataprocessing.id_formulaprediction.restrictions.elements.ElementalHeuristicChecker;
 import io.github.mzmine.modules.dataprocessing.id_formulaprediction.restrictions.rdbe.RDBERestrictionChecker;
@@ -54,7 +34,16 @@ import io.github.mzmine.parameters.parametertypes.tolerances.MZTolerance;
 import io.github.mzmine.taskcontrol.AbstractTask;
 import io.github.mzmine.taskcontrol.TaskStatus;
 import io.github.mzmine.util.FormulaUtils;
-import java.util.concurrent.CountDownLatch;
+import javafx.application.Platform;
+import org.openscience.cdk.formula.MolecularFormulaGenerator;
+import org.openscience.cdk.formula.MolecularFormulaRange;
+import org.openscience.cdk.interfaces.IChemObjectBuilder;
+import org.openscience.cdk.interfaces.IMolecularFormula;
+import org.openscience.cdk.silent.SilentChemObjectBuilder;
+import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
+
+import java.util.Map;
+import java.util.logging.Logger;
 
 public class SingleRowPredictionTask extends AbstractTask {
 

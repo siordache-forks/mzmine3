@@ -19,7 +19,6 @@
 package io.github.mzmine.modules.dataprocessing.id_ms2search;
 
 import io.github.mzmine.datamodel.Feature;
-import io.github.mzmine.datamodel.PeakListRow;
 import io.github.mzmine.datamodel.impl.SimplePeakIdentity;
 import io.github.mzmine.main.MZmineCore;
 

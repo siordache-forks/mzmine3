@@ -18,22 +18,20 @@
 
 package io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.databases;
 
+import com.google.common.collect.Range;
+import io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.DBCompound;
+import io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.DBGateway;
+import io.github.mzmine.parameters.ParameterSet;
+import io.github.mzmine.parameters.parametertypes.tolerances.MZTolerance;
+import io.github.mzmine.util.InetUtils;
+import io.github.mzmine.util.RangeUtils;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.Vector;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.google.common.collect.Range;
-
-import io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.DBCompound;
-import io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.DBGateway;
-import io.github.mzmine.modules.dataprocessing.id_onlinecompounddb.OnlineDatabases;
-import io.github.mzmine.parameters.ParameterSet;
-import io.github.mzmine.parameters.parametertypes.tolerances.MZTolerance;
-import io.github.mzmine.util.InetUtils;
-import io.github.mzmine.util.RangeUtils;
 
 public class MassBankJapanGateway implements DBGateway {
 

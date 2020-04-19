@@ -18,34 +18,6 @@
 
 package io.github.mzmine.modules.io.spectraldbsubmit.view;
 
-import io.github.mzmine.util.color.SimpleColorPalette;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.text.MessageFormat;
-import java.util.List;
-import java.util.function.Consumer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import javax.swing.BorderFactory;
-import javax.swing.ButtonGroup;
-import javax.swing.Icon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.JToggleButton;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.border.LineBorder;
-import javax.swing.text.AbstractDocument;
-import javax.swing.text.Document;
 import io.github.mzmine.datamodel.DataPoint;
 import io.github.mzmine.datamodel.MassList;
 import io.github.mzmine.datamodel.PeakListRow;
@@ -56,13 +28,28 @@ import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.modules.io.spectraldbsubmit.AdductParser;
 import io.github.mzmine.modules.visualization.spectra.simplespectra.SpectraPlot;
 import io.github.mzmine.modules.visualization.spectra.simplespectra.datasets.DataPointsDataSet;
-import io.github.mzmine.util.color.Colors;
-import io.github.mzmine.util.color.Vision;
+import io.github.mzmine.util.color.SimpleColorPalette;
 import io.github.mzmine.util.exceptions.MissingMassListException;
 import io.github.mzmine.util.scans.ScanUtils;
 import io.github.mzmine.util.scans.sorting.ScanSortMode;
 import io.github.mzmine.util.swing.IconUtil;
 import net.miginfocom.swing.MigLayout;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+import javax.swing.text.AbstractDocument;
+import javax.swing.text.Document;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.text.MessageFormat;
+import java.util.List;
+import java.util.function.Consumer;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ScanSelectPanel extends JPanel implements ActionListener {
 

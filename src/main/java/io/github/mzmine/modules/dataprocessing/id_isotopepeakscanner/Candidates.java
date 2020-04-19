@@ -18,19 +18,15 @@
 
 package io.github.mzmine.modules.dataprocessing.id_isotopepeakscanner;
 
-import java.util.Arrays;
-import java.util.logging.Logger;
 import com.google.common.collect.Range;
 import io.github.msdk.MSDKRuntimeException;
-import io.github.mzmine.datamodel.DataPoint;
-import io.github.mzmine.datamodel.IsotopePattern;
-import io.github.mzmine.datamodel.MassList;
-import io.github.mzmine.datamodel.PeakListRow;
-import io.github.mzmine.datamodel.RawDataFile;
-import io.github.mzmine.datamodel.Scan;
+import io.github.mzmine.datamodel.*;
 import io.github.mzmine.datamodel.impl.SimpleDataPoint;
 import io.github.mzmine.modules.dataprocessing.id_isotopepeakscanner.IsotopePeakScannerTask.RatingType;
 import io.github.mzmine.parameters.parametertypes.tolerances.MZTolerance;
+
+import java.util.Arrays;
+import java.util.logging.Logger;
 
 /**
  * This class is used to manage objects of the Candidate class and to calculate an average rating if

@@ -21,24 +21,10 @@ package io.github.mzmine.modules.dataprocessing.id_sirius.table;
 import de.unijena.bioinf.chemdb.DBLink;
 import io.github.msdk.id.sirius.SiriusIonAnnotation;
 import io.github.mzmine.datamodel.impl.SimplePeakIdentity;
-
-import java.awt.Color;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
-import java.util.*;
-import javax.annotation.Nonnull;
-
-import javafx.beans.property.ObjectProperty;
+import io.github.mzmine.modules.visualization.molstructure.Structure2DComponent;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.interfaces.IAtomContainer;
@@ -52,7 +38,12 @@ import org.openscience.cdk.renderer.visitor.AWTDrawVisitor;
 import org.openscience.cdk.tools.manipulator.MolecularFormulaManipulator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.github.mzmine.modules.visualization.molstructure.Structure2DComponent;
+
+import javax.annotation.Nonnull;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.List;
+import java.util.*;
 
 
 /**

@@ -15,9 +15,6 @@
  */
 package io.github.mzmine.modules.dataprocessing.adap_mcr;
 
-import java.awt.Window;
-import java.text.NumberFormat;
-
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.impl.SimpleParameterSet;
 import io.github.mzmine.parameters.parametertypes.BooleanParameter;
@@ -27,6 +24,8 @@ import io.github.mzmine.parameters.parametertypes.StringParameter;
 import io.github.mzmine.parameters.parametertypes.selectors.PeakListsParameter;
 import io.github.mzmine.parameters.parametertypes.selectors.PeakListsSelectionType;
 import io.github.mzmine.util.ExitCode;
+
+import java.text.NumberFormat;
 
 /**
  * @author aleksandrsmirnov

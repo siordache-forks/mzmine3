@@ -18,17 +18,17 @@
 
 package io.github.mzmine.datamodel.impl;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-
 import io.github.msdk.datamodel.Chromatogram;
 import io.github.msdk.datamodel.FileType;
 import io.github.msdk.datamodel.MsScan;
 import io.github.mzmine.datamodel.RawDataFile;
 import io.github.mzmine.datamodel.Scan;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * Simple implementation of the Scan interface.

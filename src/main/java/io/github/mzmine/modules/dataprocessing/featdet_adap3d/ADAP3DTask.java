@@ -18,30 +18,23 @@
 
 package io.github.mzmine.modules.dataprocessing.featdet_adap3d;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
-import java.util.logging.Logger;
 import io.github.msdk.datamodel.Feature;
 import io.github.msdk.datamodel.MsScan;
 import io.github.msdk.featuredetection.adap3d.ADAP3DFeatureDetectionMethod;
 import io.github.msdk.featuredetection.adap3d.ADAP3DFeatureDetectionParameters;
-import io.github.mzmine.datamodel.FeatureStatus;
-import io.github.mzmine.datamodel.MZmineProject;
-import io.github.mzmine.datamodel.PeakListRow;
-import io.github.mzmine.datamodel.RawDataFile;
-import io.github.mzmine.datamodel.Scan;
-import io.github.mzmine.datamodel.impl.MZmineToMSDKMsScan;
-import io.github.mzmine.datamodel.impl.MZmineToMSDKRawDataFile;
-import io.github.mzmine.datamodel.impl.SimpleFeature;
-import io.github.mzmine.datamodel.impl.SimplePeakList;
-import io.github.mzmine.datamodel.impl.SimplePeakListRow;
+import io.github.mzmine.datamodel.*;
+import io.github.mzmine.datamodel.impl.*;
 import io.github.mzmine.modules.tools.qualityparameters.QualityParameters;
 import io.github.mzmine.parameters.ParameterSet;
 import io.github.mzmine.parameters.parametertypes.selectors.ScanSelection;
 import io.github.mzmine.taskcontrol.AbstractTask;
 import io.github.mzmine.taskcontrol.TaskStatus;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.logging.Logger;
 
 public class ADAP3DTask extends AbstractTask {
 

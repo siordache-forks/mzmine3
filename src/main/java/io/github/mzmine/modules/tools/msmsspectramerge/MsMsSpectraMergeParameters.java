@@ -23,9 +23,6 @@
 
 package io.github.mzmine.modules.tools.msmsspectramerge;
 
-import java.text.NumberFormat;
-import java.util.Locale;
-
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.impl.SimpleParameterSet;

@@ -18,13 +18,12 @@
 
 package io.github.mzmine.modules.visualization.spectra.simplespectra.datasets;
 
-import java.util.ArrayList;
-import java.util.List;
+import io.github.mzmine.datamodel.DataPoint;
 import org.jfree.data.xy.AbstractXYDataset;
 import org.jfree.data.xy.IntervalXYDataset;
 
-import io.github.mzmine.datamodel.DataPoint;
-import io.github.mzmine.modules.visualization.spectra.simplespectra.datapointprocessing.datamodel.ProcessedDataPoint;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Data set for MzPeaks, used in feature detection preview

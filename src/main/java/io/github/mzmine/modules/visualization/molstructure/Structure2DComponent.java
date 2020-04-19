@@ -18,17 +18,7 @@
 
 package io.github.mzmine.modules.visualization.molstructure;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
-
-import javafx.scene.control.Tooltip;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.canvas.Canvas;
 import org.jfree.fx.FXGraphics2D;
 import org.openscience.cdk.exception.CDKException;
 import org.openscience.cdk.geometry.GeometryUtil;
@@ -46,7 +36,12 @@ import org.openscience.cdk.renderer.generators.standard.StandardGenerator;
 import org.openscience.cdk.renderer.visitor.AWTDrawVisitor;
 import org.openscience.cdk.silent.SilentChemObjectBuilder;
 import org.openscience.cdk.tools.manipulator.AtomContainerManipulator;
-import javafx.scene.canvas.Canvas;
+
+import java.awt.*;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Structure2DComponent extends Canvas {
 

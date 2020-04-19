@@ -24,23 +24,12 @@
 
 package io.github.mzmine.modules.dataprocessing.filter_baselinecorrection;
 
-import java.awt.Window;
-
 import io.github.mzmine.main.MZmineCore;
-import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.AsymmetryCorrector;
-import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.LocMinLoessCorrector;
-import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.PeakDetectionCorrector;
-import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.RollingBallCorrector;
-import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.RubberBandCorrector;
+import io.github.mzmine.modules.dataprocessing.filter_baselinecorrection.correctors.*;
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.dialogs.ParameterSetupDialog;
 import io.github.mzmine.parameters.impl.SimpleParameterSet;
-import io.github.mzmine.parameters.parametertypes.BooleanParameter;
-import io.github.mzmine.parameters.parametertypes.ComboParameter;
-import io.github.mzmine.parameters.parametertypes.DoubleParameter;
-import io.github.mzmine.parameters.parametertypes.IntegerParameter;
-import io.github.mzmine.parameters.parametertypes.ModuleComboParameter;
-import io.github.mzmine.parameters.parametertypes.StringParameter;
+import io.github.mzmine.parameters.parametertypes.*;
 import io.github.mzmine.parameters.parametertypes.selectors.RawDataFilesParameter;
 import io.github.mzmine.util.ExitCode;
 import io.github.mzmine.util.R.REngineType;

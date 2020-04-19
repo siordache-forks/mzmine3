@@ -29,16 +29,16 @@
 
 package io.github.mzmine.modules.io.spectraldbsubmit.formats;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObjectBuilder;
-
 import io.github.mzmine.datamodel.DataPoint;
 import io.github.mzmine.modules.io.spectraldbsubmit.param.LibraryMetaDataParameters;
 import io.github.mzmine.modules.io.spectraldbsubmit.param.LibrarySubmitIonParameters;
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.util.spectraldb.entry.DBEntryField;
+
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonObjectBuilder;
 
 /**
  * Json for GNPS library entry submission

@@ -24,14 +24,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
-import javafx.scene.web.WebView;
 import org.openscience.cdk.config.Elements;
 import org.openscience.cdk.tools.periodictable.PeriodicTable;
-
-import java.lang.reflect.Method;
-import java.util.EventObject;
 
 public class PeriodicTableDialogController {
 

@@ -18,13 +18,11 @@
 
 package io.github.mzmine.util;
 
-import javax.annotation.Nonnull;
-
 import com.google.common.collect.Range;
-
-import io.github.msdk.util.RawDataFileUtil;
 import io.github.mzmine.datamodel.RawDataFile;
 import io.github.mzmine.datamodel.Scan;
+
+import javax.annotation.Nonnull;
 
 /**
  * Raw data file related utilities

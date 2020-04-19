@@ -18,10 +18,10 @@
 
 package io.github.mzmine.modules.dataprocessing.id_gnpsresultsimport;
 
+import io.github.mzmine.datamodel.impl.SimplePeakIdentity;
+
 import java.text.MessageFormat;
 import java.util.HashMap;
-
-import io.github.mzmine.datamodel.impl.SimplePeakIdentity;
 
 /**
  * Identity of GNPS library matching results import.

@@ -19,7 +19,6 @@ package io.github.mzmine.modules.dataprocessing.id_isotopepeakscanner.autocarbon
 
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.impl.SimpleParameterSet;
-import io.github.mzmine.parameters.parametertypes.BooleanParameter;
 import io.github.mzmine.parameters.parametertypes.IntegerParameter;
 
 /**

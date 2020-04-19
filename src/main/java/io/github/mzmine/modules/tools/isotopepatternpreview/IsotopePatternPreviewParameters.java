@@ -18,8 +18,6 @@
 
 package io.github.mzmine.modules.tools.isotopepatternpreview;
 
-import java.awt.Window;
-
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.dialogs.ParameterSetupDialog;

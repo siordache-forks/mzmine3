@@ -18,10 +18,7 @@
 
 package io.github.mzmine.modules.dataprocessing.featdet_chromatogramdeconvolution.savitzkygolay;
 
-import java.awt.Window;
-
 import com.google.common.collect.Range;
-
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.modules.dataprocessing.featdet_chromatogramdeconvolution.PeakResolverSetupDialog;
 import io.github.mzmine.parameters.Parameter;

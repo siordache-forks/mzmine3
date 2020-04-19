@@ -17,21 +17,6 @@
  */
 package io.github.mzmine.modules.visualization.spectra.simplespectra.mirrorspectra;
 
-import io.github.mzmine.util.color.SimpleColorPalette;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.util.Arrays;
-import java.util.logging.Logger;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import org.jfree.chart.LegendItem;
-import org.jfree.chart.LegendItemCollection;
-import org.jfree.chart.axis.NumberAxis;
-import org.jfree.chart.plot.CombinedDomainXYPlot;
-import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.title.LegendTitle;
-import org.jfree.chart.ui.RectangleEdge;
 import io.github.mzmine.datamodel.DataPoint;
 import io.github.mzmine.datamodel.Scan;
 import io.github.mzmine.gui.chartbasics.gui.swing.EChartPanel;
@@ -39,11 +24,23 @@ import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.modules.visualization.spectra.multimsms.SpectrumChartFactory;
 import io.github.mzmine.modules.visualization.spectra.multimsms.pseudospectra.PseudoSpectraRenderer;
 import io.github.mzmine.modules.visualization.spectra.multimsms.pseudospectra.PseudoSpectrumDataSet;
-import io.github.mzmine.util.color.Colors;
-import io.github.mzmine.util.color.Vision;
+import io.github.mzmine.util.color.SimpleColorPalette;
 import io.github.mzmine.util.spectraldb.entry.DBEntryField;
 import io.github.mzmine.util.spectraldb.entry.DataPointsTag;
 import io.github.mzmine.util.spectraldb.entry.SpectralDBPeakIdentity;
+import org.jfree.chart.LegendItem;
+import org.jfree.chart.LegendItemCollection;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CombinedDomainXYPlot;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.title.LegendTitle;
+import org.jfree.chart.ui.RectangleEdge;
+
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.util.Arrays;
+import java.util.logging.Logger;
 
 /**
  * Creates a window with a mirror chart to compare to scans

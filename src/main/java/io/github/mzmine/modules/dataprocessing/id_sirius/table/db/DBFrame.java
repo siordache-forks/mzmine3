@@ -17,14 +17,11 @@
  */
 
 package io.github.mzmine.modules.dataprocessing.id_sirius.table.db;
-import java.awt.Desktop;;
-
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 import de.unijena.bioinf.chemdb.DBLink;
 import io.github.msdk.id.sirius.SiriusIonAnnotation;
+import io.github.mzmine.main.MZmineCore;
+import io.github.mzmine.modules.dataprocessing.id_sirius.table.SiriusCompound;
 import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
@@ -38,13 +35,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import javafx.stage.Popup;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.github.mzmine.main.MZmineCore;
-import io.github.mzmine.modules.dataprocessing.id_sirius.table.SiriusCompound;
+import java.io.IOException;
+import java.net.URL;
+
+;
 
 ///**
 // * Class DBFrame Creates a new window with Database links (e.g.: Pubchem: 1520) New window is

@@ -18,16 +18,10 @@
 
 package io.github.mzmine.modules.visualization.spectra.simplespectra.datapointprocessing.datamodel.customguicomponents;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.util.logging.Logger;
-import javax.swing.JCheckBox;
-import javax.swing.JComponent;
-import javax.swing.JTree;
-import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.*;
 import javax.swing.tree.DefaultTreeCellRenderer;
-
-import io.github.mzmine.modules.visualization.spectra.simplespectra.datapointprocessing.datamodel.MSLevel;
+import java.awt.*;
+import java.util.logging.Logger;
 
 public class DisableableTreeCellRenderer extends DefaultTreeCellRenderer {
 

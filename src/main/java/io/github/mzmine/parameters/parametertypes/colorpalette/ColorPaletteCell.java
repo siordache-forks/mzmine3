@@ -18,28 +18,20 @@
 
 package io.github.mzmine.parameters.parametertypes.colorpalette;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Logger;
-import javafx.geometry.Insets;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import io.github.mzmine.util.color.SimpleColorPalette;
 import javafx.geometry.Pos;
 import javafx.scene.control.ContentDisplay;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderStroke;
-import javafx.scene.layout.BorderStrokeStyle;
-import javafx.scene.layout.BorderWidths;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import org.graphstream.stream.file.FileSourceGEXF.GEXFConstants.COLORAttribute;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Implementation of ListCell to display color palettes and select between them.

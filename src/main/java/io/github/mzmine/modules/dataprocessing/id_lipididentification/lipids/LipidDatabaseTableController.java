@@ -18,20 +18,8 @@
 
 package io.github.mzmine.modules.dataprocessing.id_lipididentification.lipids;
 
-import io.github.mzmine.util.color.SimpleColorPalette;
-import io.github.mzmine.util.javafx.FxColorUtil;
-import java.text.NumberFormat;
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.axis.NumberAxis;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.chart.plot.XYPlot;
-import org.jfree.chart.renderer.xy.XYDotRenderer;
-import org.jfree.data.xy.XYSeries;
-import org.jfree.data.xy.XYSeriesCollection;
 import io.github.mzmine.datamodel.IonizationType;
 import io.github.mzmine.gui.chartbasics.gui.javafx.EChartViewer;
-import io.github.mzmine.gui.preferences.MZminePreferences;
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.modules.dataprocessing.id_lipididentification.LipidSearchParameters;
 import io.github.mzmine.modules.dataprocessing.id_lipididentification.lipids.lipidmodifications.LipidModification;
@@ -39,8 +27,8 @@ import io.github.mzmine.modules.dataprocessing.id_lipididentification.lipidutils
 import io.github.mzmine.parameters.ParameterSet;
 import io.github.mzmine.parameters.parametertypes.tolerances.MZTolerance;
 import io.github.mzmine.util.FormulaUtils;
-import io.github.mzmine.util.color.Colors;
 import io.github.mzmine.util.color.ColorsFX;
+import io.github.mzmine.util.color.SimpleColorPalette;
 import io.github.mzmine.util.color.Vision;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -52,6 +40,16 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYDotRenderer;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+import java.text.NumberFormat;
 
 public class LipidDatabaseTableController {
 

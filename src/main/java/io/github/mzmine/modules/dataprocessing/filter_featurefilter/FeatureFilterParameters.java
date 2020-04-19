@@ -18,9 +18,7 @@
 
 package io.github.mzmine.modules.dataprocessing.filter_featurefilter;
 
-import java.awt.Window;
 import com.google.common.collect.Range;
-
 import io.github.mzmine.main.MZmineCore;
 import io.github.mzmine.parameters.Parameter;
 import io.github.mzmine.parameters.UserParameter;
